@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img src="./assets/rebase-logo-kirjaga-taustata-2.png" height="193" width="384">
     <router-view/>
   </div>
 </template>
