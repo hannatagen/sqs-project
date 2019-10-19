@@ -84,16 +84,25 @@
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  data() {
-    return {
-      msg: 'Welcome to Your Vue.js App',
-    };
-  },
-};
-</script>
+    import axios from "../axios/axios-http"
 
+
+    export default {
+        name: 'HelloWorld',
+        data() {
+            axios.get("/")
+                 .then(response => {
+                     this.msg = response.data; // JSON are parsed automatically.
+                 })
+                 .catch(e => {
+                     console.log(e);
+                 });
+            return {
+                msg: "",
+            };
+        },
+    };
+</script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1, h2 {
