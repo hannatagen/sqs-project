@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <Car car-id="nob001"/>
     <h2>Essential Links</h2>
     <ul>
       <li>
@@ -85,10 +86,11 @@
 
 <script>
     import axios from "../axios/axios-http"
-
+    import Car from "./Car";
 
     export default {
         name: 'HelloWorld',
+        components: {Car},
         data() {
             axios.get("/")
                  .then(response => {
