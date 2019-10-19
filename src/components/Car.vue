@@ -1,6 +1,7 @@
 <template>
   <div>
     <h3>Your Nobe:</h3>
+    <img src="../assets/car.jpg" height="966" width="958"/>
     <h4>{{car}}</h4>
   </div>
 </template>
