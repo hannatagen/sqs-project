@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app container">
     <img src="./assets/rebase-logo-kirjaga-taustata-2.png" height="193" width="384">
     <router-view/>
   </div>
