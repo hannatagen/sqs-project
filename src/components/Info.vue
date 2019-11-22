@@ -68,8 +68,12 @@
       },
       changeLimit() {
         try {
+          const key = /^\d+$/.test(this.vLimit);
           const limit = parseInt(this.vLimit);
-          if (limit >= 30 && limit <= 100) {
+          if (!key) {
+            throw "error";
+          } else if (limit >= 30 && limit <= 100) {
+            this.error = '';
             this.chargingLimit = limit;
           }
           else if (limit < 30) this.error = "Charging limit is too low."
@@ -81,8 +85,12 @@
       },
       changeTemp() {
         try {
+          const key = /^\d+$/.test(this.vTemp);
           const temp = parseInt(this.vTemp);
-          if (temp >= 5 && temp <= 32) {
+          if (!key) {
+            throw "error";
+          } else if (temp >= 5 && temp <= 32) {
+            this.error = '';
             this.temp = temp;
           }
           else if (temp < 5) this.error = "Temperature is too low."
