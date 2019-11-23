@@ -1,0 +1,187 @@
+Running 'Test1' 13:03:56
+1.open on http://localhost:4200/#/home OK13:03:56
+2.click on id=__BVID__5 OK13:03:56
+3.type on id=__BVID__5 with value 29 OK13:03:57
+4.click on id=changeLimitBtn OK13:03:57
+5.waitForElementVisible on id=errorMsg with value 30000 OK13:03:57
+6.assertElementPresent on id=errorMsg with value Charging limit is too low. OK13:03:58
+7.assertElementPresent on id=chargingLimit with value 60% OK13:03:58
+'Test1' completed successfully 13:03:58
+Running 'Test2' 13:03:58
+1.open on http://localhost:4200/#/home OK13:03:59
+2.click on id=__BVID__5 OK13:03:59
+3.type on id=__BVID__5 with value 30 OK13:03:59
+4.click on id=changeLimitBtn OK13:04:00
+5.assertElementPresent on id=chargingLimit with value 30% OK13:04:00
+'Test2' completed successfully 13:04:00
+Running 'Test3' 13:04:00
+1.open on http://localhost:4200/#/home OK13:04:00
+2.click on id=__BVID__5 OK13:04:00
+3.type on id=__BVID__5 with value 31 OK13:04:01
+4.click on id=changeLimitBtn OK13:04:01
+5.assertElementPresent on id=chargingLimit with value 31% OK13:04:02
+'Test3' completed successfully 13:04:02
+Running 'Test4' 13:04:02
+1.open on http://localhost:4200/#/home OK13:04:02
+2.click on id=__BVID__5 OK13:04:02
+3.type on id=__BVID__5 with value 100 OK13:04:03
+4.click on id=changeLimitBtn OK13:04:03
+5.assertElementPresent on id=chargingLimit with value 100% OK13:04:03
+'Test4' completed successfully 13:04:04
+Running 'Test5' 13:04:04
+1.open on http://localhost:4200/#/home OK13:04:04
+2.click on id=__BVID__5 OK13:04:04
+3.type on id=__BVID__5 with value 101 OK13:04:05
+4.click on id=changeLimitBtn OK13:04:05
+5.waitForElementPresent on id=errorMsg with value 30000 OK13:04:05
+6.assertElementPresent on id=errorMsg with value Charging limit is too high. OK13:04:06
+7.assertElementPresent on id=chargingLimit with value 60% OK13:04:06
+'Test5' completed successfully 13:04:06
+Running 'Test6' 13:04:06
+1.open on http://localhost:4200/#/home OK13:04:07
+2.click on id=__BVID__5 OK13:04:07
+3.type on id=__BVID__5 with value 40.5 OK13:04:07
+4.click on id=changeLimitBtn OK13:04:08
+5.waitForElementPresent on id=errorMsg with value 30000 OK13:04:08
+6.assertElementPresent on id=errorMsg with value Charging limit is not an integer. OK13:04:08
+'Test6' completed successfully 13:04:08
+Running 'Test7' 13:04:08
+1.open on http://localhost:4200/#/home OK13:04:09
+2.click on id=__BVID__5 OK13:04:09
+3.type on id=__BVID__5 with value Much kilometers OK13:04:10
+4.click on id=changeLimitBtn OK13:04:10
+5.waitForElementPresent on id=errorMsg with value 30000 OK13:04:10
+6.assertElementPresent on id=errorMsg with value Charging limit is not an integer. OK13:04:10
+'Test7' completed successfully 13:04:10
+Running 'Test8' 13:04:10
+1.open on http://localhost:4200/#/admin OK13:04:11
+2.click on id=__BVID__5 OK13:04:11
+3.type on id=__BVID__5 with value 000001 OK13:04:12
+4.click on id=searchBtn OK13:04:12
+5.waitForElementPresent on css=p with value 30000 OK13:04:12
+6.assertElementPresent on css=p with value Car: 000001 OK13:04:13
+'Test8' completed successfully 13:04:13
+Running 'Test9' 13:04:13
+1.open on http://localhost:4200/#/admin OK13:04:13
+2.setWindowSize on 999x994 OK13:04:14
+3.click on id=__BVID__5 OK13:04:14
+4.type on id=__BVID__5 with value 0.00001 OK13:04:15
+5.click on id=searchBtn OK13:04:15
+6.waitForElementPresent on id=errorMsg with value 30000 OK13:04:15
+7.assertElementPresent on id=errorMsg with value Search key must consist only integers. OK13:04:15
+'Test9' completed successfully 13:04:15
+Running 'Test10' 13:04:15
+1.open on http://localhost:4200/#/admin OK13:04:16
+2.setWindowSize on 999x994 OK13:04:16
+3.click on id=__BVID__5 OK13:04:16
+4.type on id=__BVID__5 with value ABCDEF OK13:04:17
+5.click on id=searchBtn OK13:04:17
+6.waitForElementPresent on id=errorMsg with value 30000 OK13:04:17
+7.assertElementPresent on id=errorMsg with value Search key must consist only integers. OK13:04:17
+'Test10' completed successfully 13:04:18
+Running 'Test11' 13:04:18
+1.open on http://localhost:4200/#/admin OK13:04:18
+2.setWindowSize on 999x994 OK13:04:18
+3.click on id=__BVID__5 OK13:04:18
+4.type on id=__BVID__5 with value 00001 OK13:04:19
+5.click on id=searchBtn OK13:04:19
+6.waitForElementPresent on id=errorMsg with value 30000 OK13:04:19
+7.assertElementPresent on id=errorMsg with value ID is too short OK13:04:20
+'Test11' completed successfully 13:04:20
+Running 'Test12' 13:04:20
+1.open on http://localhost:4200/#/admin OK13:04:20
+2.setWindowSize on 999x994 OK13:04:21
+3.click on id=__BVID__5 OK13:04:21
+4.type on id=__BVID__5 with value 0000001 OK13:04:21
+5.click on id=searchBtn OK13:04:21
+6.waitForElementPresent on id=errorMsg with value 30000 OK13:04:22
+7.assertElementPresent on id=errorMsg with value ID is too long OK13:04:22
+'Test12' completed successfully 13:04:22
+Running 'Test13' 13:04:22
+1.open on http://localhost:4200/#/admin OK13:04:23
+2.setWindowSize on 999x994 OK13:04:23
+3.click on css=img OK13:04:23
+4.click on id=__BVID__5 OK13:04:23
+5.type on id=__BVID__5 with value 111111 OK13:04:24
+6.click on id=searchBtn OK13:04:24
+7.waitForElementPresent on id=errorMsg with value 30000 OK13:04:24
+8.assertElementPresent on id=errorMsg with value Couldn't find a car with that ID OK13:04:24
+'Test13' completed successfully 13:04:24
+Running 'Test14' 13:04:24
+1.open on http://localhost:4200/#/home OK13:04:25
+2.waitForElementPresent on id=lockStatus with value 30000 OK13:04:25
+3.assertElementPresent on id=lockStatus with value unlocked OK13:04:26
+'Test14' completed successfully 13:04:26
+Running 'Test15' 13:04:26
+1.open on http://localhost:4200/#/home OK13:04:27
+2.setWindowSize on 999x994 OK13:04:27
+3.click on id=unlockBtn OK13:04:27
+4.click on id=lockBtn OK13:04:28
+5.waitForElementPresent on id=lockStatus with value 30000 OK13:04:28
+6.assertElementPresent on id=lockStatus with value locked OK13:04:28
+'Test15' completed successfully 13:04:28
+Running 'Test16' 13:04:28
+1.open on http://localhost:4200/#/home OK13:04:29
+2.setWindowSize on 999x994 OK13:04:29
+3.click on id=lockBtn OK13:04:29
+4.assertElementPresent on id=lockStatus with value locked OK13:04:30
+'Test16' completed successfully 13:04:30
+Running 'Test17' 13:04:30
+1.open on http://localhost:4200/#/home OK13:04:30
+2.click on id=unlockBtn OK13:04:31
+3.click on id=unlockBtn OK13:04:31
+4.assertElementPresent on id=lockStatus with value unlocked OK13:04:31
+'Test17' completed successfully 13:04:32
+Running 'Test18' 13:04:32
+1.open on http://localhost:4200/#/home OK13:04:32
+2.click on id=__BVID__6 OK13:04:32
+3.type on id=__BVID__6 with value 4 OK13:04:33
+4.click on id=changeTempBtn OK13:04:33
+5.waitForElementPresent on id=errorMsg with value 30000 OK13:04:34
+6.assertElementPresent on id=errorMsg with value Temperature is too low. OK13:04:34
+'Test18' completed successfully 13:04:34
+Running 'Test19' 13:04:34
+1.open on http://localhost:4200/#/home OK13:04:35
+2.click on id=__BVID__6 OK13:04:35
+3.type on id=__BVID__6 with value 5 OK13:04:35
+4.click on id=changeTempBtn OK13:04:36
+5.assertElementPresent on id=temp with value 5°C OK13:04:36
+'Test19' completed successfully 13:04:36
+Running 'Test20' 13:04:36
+1.open on http://localhost:4200/#/home OK13:04:36
+2.click on id=__BVID__6 OK13:04:37
+3.type on id=__BVID__6 with value 6 OK13:04:37
+4.click on id=changeTempBtn OK13:04:37
+5.assertElementPresent on id=temp with value 6°C OK13:04:38
+'Test20' completed successfully 13:04:38
+Running 'Test21' 13:04:38
+1.open on http://localhost:4200/#/home OK13:04:38
+2.click on id=__BVID__6 OK13:04:39
+3.type on id=__BVID__6 with value 32 OK13:04:39
+4.click on id=changeTempBtn OK13:04:39
+5.assertElementPresent on id=temp with value 32°C OK13:04:40
+'Test21' completed successfully 13:04:40
+Running 'Test22' 13:04:40
+1.open on http://localhost:4200/#/home OK13:04:40
+2.click on id=__BVID__6 OK13:04:41
+3.type on id=__BVID__6 with value 33 OK13:04:41
+4.click on id=changeTempBtn OK13:04:41
+5.waitForElementPresent on id=errorMsg with value 30000 OK13:04:42
+6.assertElementPresent on id=errorMsg with value Temperature is too high. OK13:04:42
+'Test22' completed successfully 13:04:42
+Running 'Test23' 13:04:42
+1.open on http://localhost:4200/#/home OK13:04:43
+2.setWindowSize on 942x1057 OK13:04:43
+3.click on id=__BVID__6 OK13:04:43
+4.type on id=__BVID__6 with value 30.1 OK13:04:44
+5.click on id=changeTempBtn OK13:04:44
+6.assertElementPresent on id=errorMsg with value Temperature is not an integer. OK13:04:44
+'Test23' completed successfully 13:04:44
+Running 'Test24' 13:04:44
+1.open on http://localhost:4200/#/home OK13:04:45
+2.click on id=__BVID__6 OK13:04:45
+3.type on id=__BVID__6 with value temp OK13:04:46
+4.click on id=changeTempBtn OK13:04:46
+5.assertElementPresent on id=errorMsg with value Temperature is not an integer. OK13:04:46
+6.assertElementPresent on id=temp with value 17°C OK13:04:46
+'Test24' completed successfully
